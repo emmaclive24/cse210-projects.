@@ -1,3 +1,4 @@
+using System;
 public abstract class Goal
 {
     protected string _name;
@@ -23,20 +24,20 @@ public abstract class Goal
 
     public void GoalName()
     {
-        Console.WriteLine("Please enter a title for your goal:");
-        _name = Console.ReadLine();
+        System.Console.WriteLine("Please enter a title for your goal:");
+        _name = System.Console.ReadLine();
     }
 
     public void GoalDesc()
     {
-        Console.WriteLine("Describe what you want to accomplish:");
-        _desc = Console.ReadLine();
+        System.Console.WriteLine("Describe what you want to accomplish:");
+        _desc = System.Console.ReadLine();
     }
 
     public void GoalPoints()
     {
-        Console.WriteLine("How many points is this goal worth?:");
-        _points = int.Parse(Console.ReadLine());
+        System.Console.WriteLine("How many points is this goal worth?:");
+        _points = int.Parse(System.Console.ReadLine());
     }
 
     public int GetPoints()

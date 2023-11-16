@@ -1,12 +1,13 @@
+using System;
 public class Checklist : Goal
 {
     private int _targetCount;
     private int _currentCount;
     private static int  _awardedPoints;
     private int _bonusPoints;
-    private static object description;
-    private static string name;
-    private int awardedPoints;
+   // private static object description;
+    //private static string name;
+   // private int awardedPoints;
     
 
     public Checklist(string name, string description, int points, bool isComplete, int currentCount, int targetCount, int bonusPoints, object awardedPoints) : base()

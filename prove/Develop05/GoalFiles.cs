@@ -1,20 +1,20 @@
 using System;
 using System.IO;
-
-using System.IO;
+using System.Linq;
 
 public class GoalFiles
 {
-    private List<Goal> _goals = new List<Goal>();
+    private const string V = "|";
+    private System.Collections.Generic.List<Goal> _goals = new System.Collections.Generic.List<Goal>();
     private int _points = 0;
 
     public GoalFiles()
     {
         _points = 0;
-        _goals = new List<Goal>();
+        _goals = new System.Collections.Generic.List<Goal>();
     }
 
-    public void Save(List<Goal> goals, int points)
+    public void Save(System.Collections.Generic.List<Goal> goals, int points)
     {
         Console.WriteLine("Name the file!");
         string fileName = Console.ReadLine();
@@ -42,7 +42,10 @@ public class GoalFiles
                 line = file.ReadLine();
                 while (line != null)
                 {
-                    string[] goalLines = line.Split("|");
+                    //string[] goalLines = line.Split(V);
+                    string[] goalLines = line.Split('V');
+                    char[][] charLines = goalLines.Select(s => s.ToCharArray()).ToArray();
+
                     string goalType = goalLines[0];
                     if(goalType == "SimpleGoal")
                     {
@@ -69,7 +72,7 @@ public class GoalFiles
             Console.WriteLine("Exception:" + error.Message);
         }
     }
-    public List<Goal> GetGoals()
+    public System.Collections.Generic.List<Goal> GetGoals()
     {
         return _goals;
     }
@@ -79,7 +82,7 @@ public class GoalFiles
         return _points;
     }
 
-    public void GetSavedGoal(List<Goal> goals){
+    public void GetSavedGoal(System.Collections.Generic.List<Goal> goals){
         Console.WriteLine("The goals are: ");
                 int x = 0;
                 foreach(Goal goal in goals)
@@ -97,7 +100,7 @@ public class GoalFiles
                 Console.WriteLine("");
     }
 
-    internal object RecordEvent(List<Goal> goals)
+    internal object RecordEvent(System.Collections.Generic.List<Goal> goals)
     {
         throw new NotImplementedException();
     }
