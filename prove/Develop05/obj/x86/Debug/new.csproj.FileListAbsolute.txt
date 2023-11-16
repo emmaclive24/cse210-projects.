@@ -1,6 +1,0 @@
-C:\Users\clivd\Downloads\cse210-projects.-main\cse210-projects.-main\prove\Develop05\New folder\obj\x86\Debug\new.csproj.AssemblyReference.cache
-C:\Users\clivd\Downloads\cse210-projects.-main\cse210-projects.-main\prove\Develop05\New folder\obj\x86\Debug\new.csproj.CoreCompileInputs.cache
-C:\Users\clivd\Downloads\cse210-projects.-main\cse210-projects.-main\prove\Develop05\New folder\bin\Debug\ConsoleApplication.exe
-C:\Users\clivd\Downloads\cse210-projects.-main\cse210-projects.-main\prove\Develop05\New folder\bin\Debug\ConsoleApplication.pdb
-C:\Users\clivd\Downloads\cse210-projects.-main\cse210-projects.-main\prove\Develop05\New folder\obj\x86\Debug\ConsoleApplication.exe
-C:\Users\clivd\Downloads\cse210-projects.-main\cse210-projects.-main\prove\Develop05\New folder\obj\x86\Debug\ConsoleApplication.pdb
